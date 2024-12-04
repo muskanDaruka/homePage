@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { IoMenu } from "react-icons/io5";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const menus = [
     {
@@ -69,16 +71,15 @@ const Menu = () => {
 
                 <div className="sm:hidden flex items-center">
                     <button onClick={toggleMenu} className="focus:outline-none">
-                        <img
-                            src={isMenuOpen ? "/images/home/close.png" : "/images/home/menu.png"}
-                            alt="Menu Toggle"
-                            className="h-6 w-6"
-                        />
+                        {isMenuOpen ? (
+                            <img src="/Image/close.png" alt="Close Menu" className="h-6 w-6" />
+                        ) : (
+                            <img src="/Image/menu.png" alt="Open Menu" className="h-16 w-16" />
+                        )}
                     </button>
                 </div>
-
                 <div className="hidden sm:flex items-center gap-6">
-                    {menus.map((menu, index:any) => (
+                    {menus.map((menu, index: any) => (
                         <div
                             key={menu.label}
                             className="relative"

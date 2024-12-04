@@ -15,7 +15,7 @@ const Footer = () => {
                     {Array(4).fill(null).map((_, colIdx) => (
                         <div key={colIdx}>
                             <Link href="/">
-                                <div className="text-white text-xl font-bold mb-4 font-sans relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                                <div className="text-white text-xl font-bold mb-4 font-sans relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-32 after:transition-all after:duration-300 cursor-pointer">
                                     Lorem ipsum
                                 </div>
                             </Link>
@@ -35,17 +35,6 @@ const Footer = () => {
 
             <div className="flex flex-col items-center text-center text-white space-y-3">
                 <p className="hidden sm:block font-sans">Copyright ©2024 kidpro</p>
-                <ul className="flex space-x-3 sm:hidden">
-                    {["linkedin", "fb", "youtube", "twitter"].map((icon) => (
-                        <li key={icon}>
-                            <img
-                                className="h-10 rounded-full"
-                                src={`/images/home/${icon}.png`}
-                                alt={`${icon} logo`}
-                            />
-                        </li>
-                    ))}
-                </ul>
                 <p className="sm:hidden font-sans mt-3">Copyright ©2024 kidpro</p>
             </div>
         </section>
