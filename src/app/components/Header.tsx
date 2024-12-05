@@ -1,11 +1,11 @@
-import Link from 'next/link';
+
 import React from 'react';
 
 function Header() {
   return (
     <div>
       <section className="relative w-full">
-        <div className="bg-[#800080] py-10">
+        <div className="bg-[#a70000] py-10 mt-8">
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 p-5">
             <div className="text-center lg:text-left lg:w-3/4">
               <h1 className="text-white text-3xl font-bold mb-4 mt-2">

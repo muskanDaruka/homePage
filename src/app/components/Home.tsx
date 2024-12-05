@@ -1,4 +1,7 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function HomeComponent() {
     interface Image {
@@ -75,7 +78,7 @@ function HomeComponent() {
                         </p>
                     </h5>
                 </div>
-                <div className="flex-1 border-8 border-[#F8C8DC] rounded-xl">
+                <div className="flex-1 border-8 border-[#F9F49F] rounded-xl">
                     <figure className="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 w-full object-contain">
                         <a href="#">
                             <img className="rounded-lg w-full" src="/Image/fridge.png" alt="image description" />
@@ -83,12 +86,12 @@ function HomeComponent() {
                     </figure>
                 </div>
             </section>
-            <section className="relative bg-[#F8C8DC] p-5">
-                <p className="font-bold text-center text-3xl font-sans text-white">
+            <section className="relative bg-[#F9F49F] p-5">
+                <p className="font-bold text-center text-3xl font-sans text-black">
                     Lorem ipsum dolor sit<br className="hidden sm:block" /> amet consectetur adipisicing elit
                 </p>
                 <div className="flex justify-center items-center p-4">
-                    <p className="font-normal text-white text-center font-sans mb-8 w-11/12 sm:w-6/12">
+                    <p className="font-normal text-black text-center font-sans mb-8 w-11/12 sm:w-6/12">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quo vero dolore obcaecati optio repellendus laudantium at omnis ex blanditiis. Necessitatibus, nostrum! Autem, sequi nostrum facilis excepturi alias possimus voluptatum.
                     </p>
                 </div>
@@ -118,8 +121,6 @@ function HomeComponent() {
                     </div>
                 </div>
             </section>
-
-
             <section className='bg-white p-6'>
                 <div>
                     <h2 className="text-2xl font-semibold mb-4 mt-4">Lorem ipsum dolor sit amet</h2>

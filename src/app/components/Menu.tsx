@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { IoMenu } from "react-icons/io5";
-import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const menus = [
     {
@@ -45,7 +43,7 @@ const Menu = () => {
     const [activeIndex, setActiveIndex] = useState(
         menus.findIndex((menu) => menu.path === pathname)
     );
-    const [hoverIndex, setHoverIndex] = useState(null);
+    const [hoverIndex] = useState(null);
 
     useEffect(() => {
         const currentIndex = menus.findIndex((menu) => menu.path === pathname);
@@ -56,8 +54,8 @@ const Menu = () => {
     const closeMenu = () => setIsMenuOpen(false);
 
     return (
-        <section className="fixed top-0 left-0 w-full z-20 bg-white shadow-md">
-            <nav className="flex items-center justify-between h-16 px-4 sm:px-8 bg-[#800080] text-white">
+        <section className="fixed top-0 left-0 w-full z-20 bg-white">
+            <nav className="flex items-center justify-between h-16 px-4 sm:px-8 bg-[#a70000] text-white">
                 {/* Logo */}
                 <div className="flex items-center">
                     <Link href="/">
@@ -79,12 +77,12 @@ const Menu = () => {
                     </button>
                 </div>
                 <div className="hidden sm:flex items-center gap-6">
-                    {menus.map((menu, index: any) => (
+                    {menus.map((menu, index) => (
                         <div
                             key={menu.label}
                             className="relative"
-                            onMouseEnter={() => setHoverIndex(index)}
-                            onMouseLeave={() => setHoverIndex(null)}
+                            // onMouseEnter={() => setHoverIndex(index)}
+                            // onMouseLeave={() => setHoverIndex(null)}
                         >
                             <Link
                                 href={menu.path}
