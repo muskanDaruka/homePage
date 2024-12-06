@@ -15,7 +15,7 @@ const Footer = () => {
                     {Array(4).fill(null).map((_, colIdx) => (
                         <div key={colIdx}>
                             <Link href="/">
-                                <div className="text-white text-xl font-bold mb-4 font-sans relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-32 after:transition-all after:duration-300 cursor-pointer">
+                                <div className="text-white xl:text-xl text-md font-bold mb-4 font-sans relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-32 after:transition-all after:duration-300 cursor-pointer">
                                     Lorem ipsum
                                 </div>
                             </Link>

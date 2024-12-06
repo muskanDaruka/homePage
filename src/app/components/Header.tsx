@@ -22,9 +22,9 @@ function Header() {
                 Tenetur repellat perferendis accusantium. Porro dolor inventore libero!
               </p>
             </div>
-            <div className="lg:w-1/2">
+            <div className="">
               <img
-                className="rounded-lg shadow-lg mx-auto lg:mx-0"
+                className="rounded-lg shadow-lg mx-auto lg:mx-0 border-8 border-[#F9F49F]"
                 src="/Image/image.png"
                 alt="Descriptive illustration"
               />
