@@ -34,8 +34,8 @@ const Footer = () => {
             <hr className="w-full border-white my-5" />
 
             <div className="flex flex-col items-center text-center text-white space-y-3">
-                <p className="hidden sm:block font-sans">Copyright ©2024 kidpro</p>
-                <p className="sm:hidden font-sans mt-3">Copyright ©2024 kidpro</p>
+                <p className="hidden sm:block font-sans">Copyright ©2024 MD</p>
+                <p className="sm:hidden font-sans mt-3">Copyright ©2024 MD</p>
             </div>
         </section>
     );

@@ -105,9 +105,9 @@ function HomeComponent() {
           alt={category.alt}
           className="object-cover w-full h-[200px] sm:h-[250px] border-4 border-[#F9F49F]"
         />
-        <div className="absolute bottom-0 left-0 right-0 bg-white w-full h-0 group-hover:h-full transition-all duration-500 ease-in-out border-t-4 border-[#F9F49F]">
+        <div className="absolute bottom-0 left-0 right-0 bg-white w-full h-0 group-hover:h-full transition-all duration-500 ease-in-out border-4 border-[#F9F49F]">
           <div className="text-black text-center px-4">
-            <h3 className="font-bold text-base mb-2">{category.title}</h3>
+            <h3 className="font-bold text-xl mb-2">{category.title}</h3>
             <p className="text-sm">{category.description}</p>
           </div>
         </div>

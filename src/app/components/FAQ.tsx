@@ -26,7 +26,7 @@ const FAQ = () => {
                             <h2 className="text-lg font-bold font-sans">{faq.question}</h2>
                             <span>{isOpen === index ? '▲' : '▼'}</span>
                         </div>
-                        {isOpen === index && <p className="mt-2 font-normal font-sans">{faq.answer}</p>}
+                        {isOpen === index && <p className="mt-2 font-sm font-sans">{faq.answer}</p>}
                         {index !== faqData.length - 1 && <hr className="border-t my-2" />}
                     </div>
                 ))}

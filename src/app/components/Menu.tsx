@@ -43,7 +43,7 @@ const Menu = () => {
     const [activeIndex, setActiveIndex] = useState(
         menus.findIndex((menu) => menu.path === pathname)
     );
-    const [hoverIndex] = useState(null);
+    const [hoverIndex, setHoverIndex] = useState(null);
 
     useEffect(() => {
         const currentIndex = menus.findIndex((menu) => menu.path === pathname);
@@ -77,12 +77,12 @@ const Menu = () => {
                     </button>
                 </div>
                 <div className="hidden sm:flex items-center gap-6">
-                    {menus.map((menu, index) => (
+                    {menus.map((menu, index:any) => (
                         <div
                             key={menu.label}
                             className="relative"
-                            // onMouseEnter={() => setHoverIndex(index)}
-                            // onMouseLeave={() => setHoverIndex(null)}
+                            onMouseEnter={() => setHoverIndex(index)}
+                            onMouseLeave={() => setHoverIndex(null)}
                         >
                             <Link
                                 href={menu.path}
@@ -90,7 +90,7 @@ const Menu = () => {
                                     ${activeIndex === index
                                         ? "bg-white text-[#800080]"
                                         : "hover:bg-opacity-70"}
-                                    after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-6px] after:left-0 
+                                    after:bg-[#F9F49F] after:absolute after:h-1 after:w-0 after:bottom-[-6px] after:left-0 
                                     hover:after:w-full after:transition-all after:duration-300 cursor-pointer`}
                             >
                                 {menu.label}
@@ -116,7 +116,7 @@ const Menu = () => {
                         <Link
                             href="/login"
                             className="text-white text-xl font-bold font-sans relative 
-                                    after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-6px] after:left-0 
+                                    after:bg-[#F9F49F] after:absolute after:h-1 after:w-0 after:bottom-[-6px] after:left-0 
                                     hover:after:w-full after:transition-all after:duration-300 cursor-pointer hover:bg-opacity-70"
                         >
                             Login
